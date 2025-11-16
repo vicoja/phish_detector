@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0a3d62, #3c6382);
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 450px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.input-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-card input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-card button {
+    padding: 12px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-card button:hover {
+    background: #3ca0ff;
+}
+
+.result-card {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    animation: fadeIn 0.7s ease;
+}
+
+.legit {
+    background: #2ecc71;
+    color: white;
+}
+
+.phishing {
+    background: #e74c3c;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
